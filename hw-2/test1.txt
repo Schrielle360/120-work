@@ -1,0 +1,7 @@
+Name: Schrielle T. Standish
+Date: September 2nd, 2018
+
+This is my first text file for Dr. Musick's Creative coding course.
+
+
+I added a new line to this file in my text!!!!!!!!!!!!
