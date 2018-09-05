@@ -53,4 +53,4 @@ I helped Zeemakn out (I think) with his issue of opening files on Atom with wind
 
 ```
 ##  IMAGE OF MY EDITOR
-![Image of my editor](week 2 image.jpg)
+![Image of my editor](week-2-image.jpg)
