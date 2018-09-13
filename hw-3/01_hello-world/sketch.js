@@ -9,7 +9,6 @@ function setup() {
 
 
 
-    
 }// This is where you would put writing or other things.
 function draw() {
 
