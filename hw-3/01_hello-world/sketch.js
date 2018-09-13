@@ -6,10 +6,10 @@ function setup() {
 
     // color the background 'purple'
     background( 'purple' );
+}
 
+// This is where you would put writing or other things.
 
-
-}// This is where you would put writing or other things.
 function draw() {
 
     // tell p5 to print the text string "Hello World!"
