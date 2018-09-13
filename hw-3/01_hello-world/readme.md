@@ -1,3 +1,3 @@
 Schrielle Standish
 
-["Hello World!" Sketch](https://schrielle360.github.io/120-work/hw-3/)
+["Hello World!" Sketch](file:///C:/Users/miko/Documents/GitHub/School/120-work/hw-3/01_hello-world/index.html)
