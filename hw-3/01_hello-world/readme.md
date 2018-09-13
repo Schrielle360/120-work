@@ -1,5 +1,3 @@
-# Empty p5 sketch.
+Schrielle Standish
 
-A simple purple background hello world 
-
-Current p5 version -> 0.7.1
+["Hello World!" Sketch](https://schrielle360.github.io/120-work/hw-3/)
