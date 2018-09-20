@@ -163,9 +163,5 @@ rect(-100, 120, 100, 50)
     pop(); // HEAD END
 
 
-
-
     pop();
 }
-
-text("Happy Halloween", -100, -100 )
