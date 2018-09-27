@@ -6,7 +6,7 @@ function setup() {
 function draw() {
 
     // background
-    background( 'rgb(81, 48, 20)' );
+    background( 'rgb(81, 48, 20)');
 
 
     push();
