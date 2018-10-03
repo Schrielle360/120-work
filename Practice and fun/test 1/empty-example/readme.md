@@ -1,5 +1,3 @@
-# Empty p5 sketch.
-
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
-
-Current p5 version -> 0.7.1
+/ this is what I'm using to practice.
+// this time I made a pumpkin slide across the screen because Halloween.
+/// I hope you enjoyed :)
