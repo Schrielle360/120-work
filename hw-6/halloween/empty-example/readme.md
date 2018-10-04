@@ -44,4 +44,4 @@ I did not help anyone this week. I was too busy playing around, trying to figure
 ```
 
 ## IMAGE OF MY EDITOR
-![Image of my editor](stupid_pumpkin.jpg)
+![Image of my editor](StupidPumpkin.jpg)
