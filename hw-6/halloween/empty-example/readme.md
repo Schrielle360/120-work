@@ -20,7 +20,7 @@ This homework cycle we worked on Math, Variables, and my personal favorite; move
 - I combined the code I made with the example code and CHANGED the example code
 - I merged the codes till they were both functioning in tandum on the same screen.
 - I tweeked my moving pumpkin to moving faster across the screen and laughed at how angry it looks.
-- I added candy 8D 
+- I added candy 8D
 #### Did you have any problems or issues? How did you solve these? Did you post about these to the class repo issue tracker? Did you receive any useful feedback from your classmates?
 
 ## `Problems or Issues`
@@ -44,4 +44,4 @@ I did not help anyone this week. I was too busy playing around, trying to figure
 ```
 
 ## IMAGE OF MY EDITOR
-![Image of my editor](StupidPumpkin.jpg)
+![Image of my editor](stupidpumpkin.jpg)
