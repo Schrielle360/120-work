@@ -17,6 +17,10 @@ let alphaNoise;
 let x = -400;
 let y = 0;
 
+let star = {};
+  star.posx = 100;
+  star.posy = 100;
+
 
 function setup() {
     bgColor = color('black');
@@ -34,6 +38,7 @@ function setup() {
 
 
 function draw() {
+
 
     centerX = width * 0.5;
     centerY = height * 0.5;
@@ -66,8 +71,21 @@ function draw() {
     smoke.pos2x = smoke.pos3x;
     smoke.pos2y = smoke.pos3y;
 
+    // stars
+     star.posx = random(0, width);
+     star.posy = random(0, height);
+     fill('green');
+     ellipse(star.posx, star.posy, 10, 10);
+
+     star.posx = random(0, width);
+     star.posy = random(0, height);
+     fill('purple');
+     ellipse(star.posx, star.posy, 10, 10);
+
+
+
 push();
-//happmouseY halloween temouseXt
+//Happy halloween text
   fill('white');
   stroke('brown');
   strokeWeight(4);
