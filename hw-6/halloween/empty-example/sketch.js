@@ -17,9 +17,9 @@ let alphaNoise;
 let x = -400;
 let y = 0;
 
-let star = {};
-  star.posx = 100;
-  star.posy = 100;
+let candy = {};
+  candy.posx = 100;
+  candy.posy = 100;
 
 
 function setup() {
@@ -71,16 +71,16 @@ function draw() {
     smoke.pos2x = smoke.pos3x;
     smoke.pos2y = smoke.pos3y;
 
-    // stars
-     star.posx = random(0, width);
-     star.posy = random(0, height);
+    // candys
+     candy.posx = random(0, width);
+     candy.posy = random(0, height);
      fill('green');
-     ellipse(star.posx, star.posy, 10, 10);
+     ellipse(candy.posx, candy.posy, 10, 10);
 
-     star.posx = random(0, width);
-     star.posy = random(0, height);
+     candy.posx = random(0, width);
+     candy.posy = random(0, height);
      fill('purple');
-     ellipse(star.posx, star.posy, 10, 10);
+     ellipse(candy.posx, candy.posy, 10, 10);
 
 
 
