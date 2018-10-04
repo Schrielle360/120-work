@@ -38,7 +38,10 @@ I need to get better at merging random things with color and all that. I am good
 
 ## `Help`
 ```
-I did not help anyone this week. I was too busy playing around, trying to figure out code, and reading a coding book for p5.js that was recommended with the course.
+I did not help anyone this week. I was too busy playing around, trying to figure out code,
+ and reading a coding book for p5.js that was recommended with the course.
+
+```
 
 ## IMAGE OF MY EDITOR
 ![Image of my editor](stupid_pumpkin.jpg)
