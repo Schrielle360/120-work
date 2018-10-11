@@ -30,7 +30,13 @@ if ( mouseIsPressed ) {
         textAlign(CENTER);
         text("happy...", width/2, height/2);
     }
-    stroke(255);
+    if (mouseIsPressed){
+      frameRate (10);
+    }
+    else {
+      frameRate (60);
+    }
+    stroke('orange');
     strokeWeight(4);
     noFill();
     ellipse(x, height / 2, 100, 100);
@@ -42,4 +48,5 @@ if ( mouseIsPressed ) {
         speed = 3;
     }
     x = x + speed;
+
 }
