@@ -126,10 +126,13 @@ ellipse(x+30, y-15, 5, 5); //right pupil
 pop();
 
 //this makes the pumpkin move across the screen
-x = x+10 ;
+x = x + 10 ;
 
 // this lets the pumpkin return and loop
-if ( x > windowWidth) {
-  x = -400;
+if ( x === windowWidth) {
+  x = windowWidth - 10;
+}
+if (x === 0) {
+  x = x + 10;
 }
 }
