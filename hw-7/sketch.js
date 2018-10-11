@@ -30,7 +30,7 @@ function draw() {
     }
 
     if ( ball.x >= 200 && ball.x <= 600 || ball.x >= 800 && ball.x <= 1200) {
-      fill('purple');
+      fill( random(255), random(255), random(255) );
     }
     else { fill('green');
   }
