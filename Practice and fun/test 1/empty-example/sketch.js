@@ -73,15 +73,11 @@ function draw() {
     smoke.pos2y = smoke.pos3y;
 
     // candys
-     candy.posx = random(0, width);
-     candy.posy = random(0, height);
-     fill('green');
-     ellipse(candy.posx, candy.posy, 10, 10);
 
      candy.posx = random(0, width);
      candy.posy = random(0, height);
-     fill('purple');
-     ellipse(candy.posx, candy.posy, 10, 10);
+     fill(random(250), random(250), random(250));
+     ellipse(candy.posx, candy.posy, 20, 20);
 
 
 
