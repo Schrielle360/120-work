@@ -29,8 +29,14 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    fill(255);
+    if ( ball.x >= 200 && ball.x <= 600 || ball.x >= 800 && ball.x <= 1200) {
+      fill('purple');
+    }
+    else { fill('green');
+  }
+
     ellipse(ball.x, ball.y, ball.width, ball.width);
+
 }
 
 function mousePressed() {
