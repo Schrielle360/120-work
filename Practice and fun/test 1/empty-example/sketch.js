@@ -1,28 +1,97 @@
-// defining pumpkin variables
-let windowWidth = 800;
-let x = mouseX
-let y = mouseY
+// DEFINE GLOBAL VARIABLES
+let bgColor; // background-color
+let centerX, centerY;
+let smoke = {};
+smoke.pos1x = 100;
+smoke.pos1y = 100;
+smoke.pos2x = 200;
+smoke.pos2y = 200;
+smoke.pos3x = 0;
+smoke.pos3y = 0;
+let multMax = 0.02;
+let multDelta;
+let mult;
+let redFill = 255;
+let alphaAmt = 50;
+let alphaNoise;
+let x = -400;
+let y = 0;
 
-// we can then assign qualities to the object
+let candy = {};
+  candy.posx = 100;
+  candy.posy = 100;
 
 
- function setup (){
-   createCanvas( windowWidth, 600);
-   background ('black');
+function setup() {
+    bgColor = color('black');
+    // createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, 800);
+    background(bgColor);
+    // frameRate(20);
 
- }
+    // Set initial position
+    smoke.pos1x = random(width);
+    smoke.pos1y = random(height);
+    smoke.pos2x = smoke.pos1x + 100;
+    smoke.pos2y = smoke.pos1y - 100;
+}
+
 
 function draw() {
 
 
-//happy halloween text
-  fill('orange');
-  textSize(100);
+    centerX = width * 0.5;
+    centerY = height * 0.5;
+
+    multDelta = noise(0.99 * frameCount + pow(2, 8));
+    multDelta = map(multDelta, 0, 1, -0.01, 0.01);
+    multMax = constrain(multMax + multDelta, 0.05, 0.4);
+    mult = random(-multMax, multMax);
+    smoke.pos3x = abs(((width * mult) + smoke.pos2x) % width);
+    mult = random(-multMax, multMax);
+    smoke.pos3y = abs(((height * mult) + smoke.pos2y) % height);
+
+
+    mult = noise(frameCount * 0.01) * 250;
+    redFill = constrain(mult, 0, 255);
+
+    noStroke();
+    // stroke(200, 20);
+    // get a random noise value between (0-1)
+    alphaNoise = noise(0.1 * frameCount + 1000);
+    alphaNoise = map(alphaNoise, 0, 1, -2, 2);
+    alphaAmt += alphaNoise;
+    alphaAmt = constrain(alphaAmt, 20, 100);
+    fill(100, 255 - redFill, 175, 30);
+
+    triangle(smoke.pos1x, smoke.pos1y, smoke.pos2x, smoke.pos2y, smoke.pos3x, smoke.pos3y);
+
+    smoke.pos1x = smoke.pos2x;
+    smoke.pos1y = smoke.pos2y;
+    smoke.pos2x = smoke.pos3x;
+    smoke.pos2y = smoke.pos3y;
+
+    // candys
+     candy.posx = random(0, width);
+     candy.posy = random(0, height);
+     fill('green');
+     ellipse(candy.posx, candy.posy, 10, 10);
+
+     candy.posx = random(0, width);
+     candy.posy = random(0, height);
+     fill('purple');
+     ellipse(candy.posx, candy.posy, 10, 10);
+
+
+
+push();
+//Happy halloween text
+  fill('white');
   stroke('brown');
-  strokeweight(4);
+  strokeWeight(4);
+  textSize(100);
   textFont('Calder');
   text('Happy Halloween!', 25, 100);
-
 
 // translate the canvas to center being 0
 translate (400, 400); //0 is now the center of the canvas
@@ -30,6 +99,7 @@ translate (400, 400); //0 is now the center of the canvas
 //now making the head
 
 push();
+strokeWeight(2);
 fill('orange');
 ellipse(x, y, 200, 100); //base of the head
 
@@ -56,10 +126,10 @@ ellipse(x+30, y-15, 5, 5); //right pupil
 pop();
 
 //this makes the pumpkin move across the screen
-x=x+1
+x = x+10 ;
 
 // this lets the pumpkin return and loop
-if (x > 700) {
-  x = -30
+if ( x > windowWidth) {
+  x = -400;
 }
 }
