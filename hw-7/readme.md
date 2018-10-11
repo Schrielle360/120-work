@@ -26,4 +26,4 @@
 - I simply added a color changer. So when the ball goes a certain place past the x axes it goes purple, too far and it goes green.
 - It then does that one more time.
 
-![Image of my editor]('changing.jpg')
+![Image of my editor](changing.jpg)
