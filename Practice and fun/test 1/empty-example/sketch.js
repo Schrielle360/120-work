@@ -21,11 +21,12 @@ let candy = {};
   candy.posx = 100;
   candy.posy = 100;
 
+let speed = 10
 
 function setup() {
     bgColor = color('black');
     // createCanvas(windowWidth, windowHeight);
-    createCanvas(windowWidth, 800);
+    createCanvas(1000, 800);
     background(bgColor);
     // frameRate(20);
 
@@ -125,14 +126,13 @@ ellipse(x-30, y-15, 5, 5); //left pupil
 ellipse(x+30, y-15, 5, 5); //right pupil
 pop();
 
-//this makes the pumpkin move across the screen
-x = x + 10 ;
 
 // this lets the pumpkin return and loop
-if ( x === windowWidth) {
-  x = windowWidth - 10;
+if ( x >= 650 || x < -450) {
+  speed = speed * -1;
 }
-if (x === 0) {
-  x = x + 10;
-}
+
+// this makes the pumpkin move across the screen
+x = x + speed
+
 }
