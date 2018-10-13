@@ -21,7 +21,7 @@ let candy = {};
   candy.posx = 100;
   candy.posy = 100;
 
-let speed = 10
+let speed = 5
 
 function setup() {
     bgColor = color('black');
@@ -96,31 +96,42 @@ translate (400, 400); //0 is now the center of the canvas
 //now making the head
 
 push();
-strokeWeight(2);
-fill('orange');
-ellipse(x, y, 200, 100); //base of the head
+  strokeWeight(2);
+  fill('orange');
+  ellipse(x, y, 200, 100); //base of the head
 
-fill('black');
+  fill('black');
 //eyes
-triangle(x-50, y-35, x-50, y-10, x-15, y-10); // left eye
-triangle(x+50, y-35, x+50, y-10, x+15, y-10); //right eye
-triangle(x, y-10, x-10, y+10, x+10, y+10); // nose
-
-//mouth
-
-triangle(x-50, y+10, x-50, y+30, x-25, y+20); //first triangle left of mouth
-triangle(x-30, y+10, x-30, y+30, x+5, y+20); //second triangle left of mouth
-triangle(x-5, y+20, x+30, y+10, x+30, y+30); //first triangle right of mouth
-triangle(x+20, y+20, x+50, y+10, x+50, y+30); // second triangle right of mouth
+  triangle(x-50, y-35, x-50, y-10, x-15, y-10); // left eye
+  triangle(x+50, y-35, x+50, y-10, x+15, y-10); //right eye
+  triangle(x, y-10, x-10, y+10, x+10, y+10); // nose
 
 // the stem
-fill('green'); //making stem green
-rect(x-10, y-70, 15, 20);
+  fill('green'); //making stem green
+  rect(x-10, y-70, 15, 20);
 
-fill('yellow'); //eye pupils
-ellipse(x-30, y-15, 5, 5); //left pupil
-ellipse(x+30, y-15, 5, 5); //right pupil
+  fill('yellow'); //eye pupils
+  ellipse(x-30, y-15, 5, 5); //left pupil
+  ellipse(x+30, y-15, 5, 5); //right pupil
 pop();
+
+// The hands
+//left
+  fill('orange');
+  rect(x-130, y-10, 40,30);
+  rect(x-115, y-25, 10,20);
+//straight
+  fill('orange')
+  rect(x+90, y-10, 40, 30);
+  rect(x+105, y-25, 10, 20);
+
+  //mouth
+    fill('black');
+    stroke('black');
+    triangle(x-50, y+10, x-50, y+30, x-25, y+20); //first triangle left of mouth
+    triangle(x-30, y+10, x-30, y+30, x+5, y+20); //second triangle left of mouth
+    triangle(x-5, y+20, x+30, y+10, x+30, y+30); //first triangle right of mouth
+    triangle(x+20, y+20, x+50, y+10, x+50, y+30); // second triangle right of mouth
 
 
 // this lets the pumpkin return and loop
