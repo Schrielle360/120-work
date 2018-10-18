@@ -94,7 +94,6 @@ push();
 translate (400, 400); //0 is now the center of the canvas
 
 //now making the head
-
 push();
   strokeWeight(2);
   fill('orange');
