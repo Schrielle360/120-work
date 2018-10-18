@@ -45,6 +45,7 @@ I liked the rotating arcs. I was not fully good at it and would love to learn mo
 ## `Help`
 ```
 This week no one really asked for help on anything that wasn't easy to figure out.
+```
 
 ##  IMAGE OF MY EDITOR
 ![Image of my editor](cats.jpg)
