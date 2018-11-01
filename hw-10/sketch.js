@@ -92,20 +92,17 @@ push();
 
 // translate the canvas to center being 0
 translate (400, 400); //0 is now the center of the canvas
-
-  pumpkin();
-
-// this lets the pumpkin return and loop
-if ( x >= 650 || x < -450) {
-  speed = speed * -1;
+  //stationary pumpkin
+  pumpkin(30, 100, 20);
+  //moving pumpkin (curser)
+  pumpkin(mouseX-500, mouseY-400, 20);
+// stationary ghost
+  ghost(-200, -200, 40);
+//moving ghost
+  ghost(mouseX-450, mouseY-350, 40);
 }
 
-// this makes the pumpkin move across the screen
-x = x + speed
-
-}
-
-function pumpkin(){
+function pumpkin(x, y, diameter){
 
   //now making the head
     strokeWeight(2);
@@ -126,15 +123,6 @@ function pumpkin(){
     ellipse(x-30, y-15, 5, 5); //left pupil
     ellipse(x+30, y-15, 5, 5); //right pupil
 
-  // The hands
-  //left
-    fill('orange');
-    rect(x-130, y-10, 40,30);
-    rect(x-115, y-25, 10,20);
-  //straight
-    fill('orange')
-    rect(x+90, y-10, 40, 30);
-    rect(x+105, y-25, 10, 20);
 
     //mouth
       fill('black');
@@ -145,4 +133,22 @@ function pumpkin(){
       triangle(x+20, y+20, x+50, y+10, x+50, y+30); // second triangle right of mouth
 
 
+}
+
+function ghost(x, y, diameter){
+  //basic ghost
+  fill('white');
+  stroke('white');
+  strokeWeight(4);
+  ellipse(x, y, diameter, diameter);
+  //eyes
+  fill('black');
+  stroke('black');
+  strokeWeight(1);
+  //left
+  ellipse(x-6, y-6, diameter/4, diameter/4);
+  //right
+  ellipse(x+6, y-6, diameter/4, diameter/4);
+  //mouth
+  ellipse(x, y+8, diameter/3, diameter/3);
 }
