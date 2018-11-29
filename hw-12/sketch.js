@@ -82,7 +82,7 @@ class Ball {
             this.deltaX *= -1;
                     this.color = 'rgb(110, 240, 158)';
             }
-            }
+        }
             // check if the ball has hit a horizontal wall (top or bottom walls)
             else if (this.posY + this.rad >= height) {
             if(this.deltaY > 0) {
@@ -93,9 +93,9 @@ class Ball {
         else if(this.posY - this.rad <= 0) {
                 if(this.deltaY < 0) {
             this.deltaY *= -1;
-                    this.color = 'rgb(110, 240, 158)';
+                    this.color = 'rgb(110,240,158)';
             }
-            }
+        }
     }
 
 
