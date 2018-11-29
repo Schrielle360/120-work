@@ -39,7 +39,6 @@ class Bubble {
     }
 
     show() {
-
         noStroke();
         fill('pink');
         ellipse(this.x, this.y, this.r * 2);
