@@ -69,16 +69,33 @@ class Ball {
     }
 
     edgeCheck() {
-        // check if the ball has hit a vertical wall (left or right walls)
-        if (this.posX + this.rad >= width || this.posX - this.rad <= 0) {
+            // check if the ball has hit a vertical wall (left or right walls)
+            if (this.posX + this.rad >= width) {
+            //Check if it is going right, if so change course
+            if(this.deltaX > 0) {
             this.deltaX *= -1;
-            this.color = 'purple';
+                this.color = 'rgb(110, 240, 158)';
+               }
         }
-        // check if the ball has hit a horizontal wall (top or bottom walls)
-        if (this.posY + this.rad >= height || this.posY - this.rad <= 0) {
+        else if (this.posX - this.rad <= 0) {
+            if(this.deltaX < 0) {
+            this.deltaX *= -1;
+                    this.color = 'rgb(110, 240, 158)';
+            }
+            }
+            // check if the ball has hit a horizontal wall (top or bottom walls)
+            else if (this.posY + this.rad >= height) {
+            if(this.deltaY > 0) {
             this.deltaY *= -1;
-            this.color = 'green';
+                    this.color = 'rgb(110, 240, 158)';
+            }
         }
+        else if(this.posY - this.rad <= 0) {
+                if(this.deltaY < 0) {
+            this.deltaY *= -1;
+                    this.color = 'rgb(110, 240, 158)';
+            }
+            }
     }
 
 
