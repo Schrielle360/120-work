@@ -3,11 +3,11 @@ function Bubble(x, y) {
   this.y = y;
 
   this.display = function() {
-    //imageMode(CENTER);
-    //image(img, this.x, this.y);
-    stroke(255);
-    fill(255,100);
-    ellipse(this.x,this.y, 48, 48);
+    imageMode(CENTER);
+    image(img, this.x, this.y);
+    //stroke(255);
+    //fill(255,100);
+    //ellipse(this.x,this.y, 48, 48);
   }
 
   this.update = function() {

@@ -1,9 +1,9 @@
 var bubbles = [];
-//var img;
+var img;
 
-//function preload(){
-//    img = loadImage('images/catgirl.png');
-//}
+function preload(){
+    img = loadImage('catgirl.png');
+}
 
 function setup() {
   createCanvas(600, 400);
