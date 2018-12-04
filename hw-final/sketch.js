@@ -8,8 +8,8 @@ function preload(){
 function setup() {
     createCanvas(windowHeight, windowWidth);
     // create a new bubble object of class type "bubble"
-    let init_x = 60;
-    let init_y = 60;
+    let init_x = 30;
+    let init_y = 30;
     for (let i = 0; i < numOfBalls; i++) {
         bubbles.push(new Bubble(init_x, init_y));
         // move the starting position over
@@ -17,8 +17,8 @@ function setup() {
         // "on top" of each other
         init_x += 100;
         if (init_x > width) {
-            init_x = 60;
-            init_y += 100;
+            init_x = 40;
+            init_y += 70;
         }
     }
 
