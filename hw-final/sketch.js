@@ -6,7 +6,9 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(600, 400);
+    createCanvas(windowWidth, 400);
+    let b = new Bubble(width/2, height/2, 10);
+    bubbles.push(b);
 }
 
 function mousePressed() {

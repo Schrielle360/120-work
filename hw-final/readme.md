@@ -46,3 +46,4 @@
   Shiffman video on objects and images. 11/29/2018
 - worked on a basic code of bubble making to start, and tried to add in an image
   (so far no success on the image). 11/29/2018
+- Make Chibis appear on their own 12/3/2018
