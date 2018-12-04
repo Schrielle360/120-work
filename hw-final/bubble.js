@@ -27,14 +27,14 @@ function Bubble(x, y) {
       if (this.y + this.rad >= height || this.y - this.rad <= 0) {
           this.deltaY *= -1;
       }
-      ballCheck(otherBalls, myId) {
+      bubbleCheck(otherbubbles, myId) {
           // for loop touches each of the balls in the array
-          for (let n = 0; n < otherBalls.length; n++) {
+          for (let i = 0; i < otherbubbles.length; i++) {
               // if n != myId, then check for touching
               // otherwise, its ME and we need to skip
-              if (n != myId) {
-                  let d = dist(this.x, this.y, otherBalls[n].x, otherBalls[n].y);
-                  let combinedR = this.rad + otherBalls[n].rad;
+              if (i != myId) {
+                  let d = dist(this.x, this.y, otherbubbles[i].x, otherbubbles[i].y);
+                  let combinedR = this.rad + otherbubbles[i].rad;
 
                   if (d <= combinedR) {
                       this.deltaX *= -1;
