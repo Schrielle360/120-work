@@ -14,7 +14,7 @@
 
 
 
-2. #### insperation
+2. #### inspiration
 
 
 - The jumping dinosaur that happens when your chrome won't
