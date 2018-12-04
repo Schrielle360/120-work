@@ -31,7 +31,7 @@ function mousePressed() {
 
 function draw() {
   background('indigo');
-  for (let i = 0; i < balls.length; i++) {
+  for (var i = bubbles.length - 1; i >= 0; i--) {
     bubbles[i].update();
     bubbles[i].display();
     bubbles[i].bubbleCheck();
