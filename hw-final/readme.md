@@ -47,3 +47,7 @@
 - worked on a basic code of bubble making to start, and tried to add in an image
   (so far no success on the image). 11/29/2018
 - Make Chibis appear on their own 12/3/2018
+- Fail at making chibis appear on their own, or notice eachother. 12/3/2018
+- Fail at making them notice canvas edges 12/3/2018
+- mess up entire code, not sure how to fix. asked for help 12/3/2018
+- cry a little inside 12/3/2018 
