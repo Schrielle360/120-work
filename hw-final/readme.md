@@ -51,3 +51,5 @@
 - Fail at making them notice canvas edges 12/3/2018
 - mess up entire code, not sure how to fix. asked for help 12/3/2018
 - cry a little inside 12/3/2018
+- try to figure out how to fix this. Made some changes to the code
+  12/3/2018 
