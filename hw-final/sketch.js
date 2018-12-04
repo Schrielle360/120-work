@@ -6,7 +6,7 @@ function preload(){
 }
 
 function setup() {
-    createCanvas(windowWidth, 400);
+    createCanvas(windowHeight, windowWidth);
     // create a new bubble object of class type "bubble"
     let init_x = 60;
     let init_y = 60;

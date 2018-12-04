@@ -5,7 +5,6 @@ function Bubble(x, y) {
   this.rad = this.size / 2;
   this.deltaX = random(-10, 10);
   this.deltaY = random(-10, 10);
-
   this.display = function() {
     imageMode(CENTER);
     image(img, this.x, this.y);
@@ -30,7 +29,7 @@ function Bubble(x, y) {
       bubbleCheck(otherbubbles, myId) {
           // for loop touches each of the balls in the array
           for (let i = 0; i < otherbubbles.length; i++) {
-              // if n != myId, then check for touching
+              // if i != myId, then check for touching
               // otherwise, its ME and we need to skip
               if (i != myId) {
                   let d = dist(this.x, this.y, otherbubbles[i].x, otherbubbles[i].y);
