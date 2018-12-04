@@ -1,14 +1,27 @@
 var bubbles = [];
 var img;
-
+const numOfBubbles = 30;
 function preload(){
     img = loadImage('catgirl.png');
 }
 
 function setup() {
     createCanvas(windowWidth, 400);
-    let b = new Bubble(width/2, height/2, 10);
-    bubbles.push(b);
+    // create a new bubble object of class type "bubble"
+    let init_x = 60;
+    let init_y = 60;
+    for (let i = 0; i < numOfBalls; i++) {
+        bubbles.push(new Bubble(init_x, init_y));
+        // move the starting position over
+        // This is to ensure that the chibis do not start
+        // "on top" of each other
+        init_x += 100;
+        if (init_x > width) {
+            init_x = 60;
+            init_y += 100;
+        }
+    }
+
 }
 
 function mousePressed() {
