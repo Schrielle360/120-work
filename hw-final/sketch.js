@@ -24,12 +24,9 @@ function setup() {
 
 }
 
-function mousePressed() {
-  var b = new Bubble(mouseX, mouseY);
-  bubbles.push(b);
-}
 
 function draw() {
+
   background('indigo');
   for (var i = bubbles.length - 1; i >= 0; i--) {
     bubbles[i].update();
