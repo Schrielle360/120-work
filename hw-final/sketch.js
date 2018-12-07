@@ -21,8 +21,8 @@ function setup() {
     // chibis wont start on eachother
     init_x += 100;
     if(init_x > width) {
-      init_x = random(0, windowWidth);
-      init_y += random(0, windowHeight);
+      init_x += random(60, 600);
+      init_y += random(60, 600);
       }
     }
   }
