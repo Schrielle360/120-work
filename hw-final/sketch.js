@@ -41,6 +41,10 @@ function draw() {
   background('indigo');
 
   for (let i = 0; i < chibi.length; i++) {
+    //remove the chibi?
+    if (chibi[i].rollover(mouseX, mouseY)) {
+      text('chibi count:'+chibi[i].rollover();, windowWidth, windowHeight);
+    }
   //call the Chibi's methods
     chibi[i].chibiCheck(chibi, i);
     chibi[i].display();
