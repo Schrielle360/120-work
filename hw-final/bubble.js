@@ -53,8 +53,8 @@ class Chibi {
           let combinedR = this.rad + otherChibis[n].rad;
 
           if( d <= combinedR) {
-            this.deltaX *= -1;
-            this.deltaY *= -1;
+            this.deltaX *= -2;
+            this.deltaY *= -2;
         }
       }
     }
