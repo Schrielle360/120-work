@@ -28,6 +28,7 @@ function setup() {
   }
 }
 
+// deletes a chibi if clicked. 
 function mousePressed() {
     for (let i = 0; i < chibi.length; i++) {
       if (chibi[i].clicked(mouseX, mouseY)) {
