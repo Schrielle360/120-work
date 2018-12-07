@@ -1,4 +1,4 @@
-function Bubble(x, y) {
+function Chibi(x, y) {
   this.x = x;
   this.y = y;
   this.size = random(20, 80);
@@ -28,14 +28,14 @@ function Bubble(x, y) {
     }
   }
 
-      bubbleCheck(otherbubbles, myId) {
+      bubbleCheck(otherChibis, myId) {
           // for loop touches each of the balls in the array
-          for (let i = 0; i < otherbubbles.length; i++) {
+          for (let i = 0; i < otherChibis.length; i++) {
               // if i != myId, then check for touching
               // otherwise, its ME and we need to skip
               if (i != myId) {
-                  let d = dist(this.x, this.y, otherbubbles[i].x, otherbubbles[i].y);
-                  let combinedR = this.rad + otherbubbles[i].rad;
+                  let d = dist(this.x, this.y, otherChibis[i].x, otherChibis[i].y);
+                  let combinedR = this.rad + otherChibis[i].rad;
 
                   if (d <= combinedR) {
                       this.deltaX *= -1;

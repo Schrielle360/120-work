@@ -1,4 +1,4 @@
-var bubbles = [];
+var chibis = [];
 var img;
 const numOfChibis = 20;
 function preload(){
@@ -7,11 +7,11 @@ function preload(){
 
 function setup() {
     createCanvas(windowHeight, windowWidth);
-    // create a new bubble object of class type "bubble"
+    // create a new chibi object of class type "chibi"
     let init_x = 30;
     let init_y = 30;
     for (let i = 0; i < numOfBalls; i++) {
-        bubbles.push(new Bubble(init_x, init_y));
+        chibis.push(new Chibi(init_x, init_y));
         // move the starting position over
         // This is to ensure that the chibis do not start
         // "on top" of each other
@@ -28,11 +28,11 @@ function setup() {
 function draw() {
 
   background('indigo');
-  for (var i = bubbles.length - 1; i >= 0; i--) {
-    bubbles[i].update();
-    bubbles[i].display();
-    bubbles[i].bubbleCheck();
-    bubbles[i].edgeCheck();
+  for (var i = chibis.length - 1; i >= 0; i--) {
+    chibis[i].update();
+    chibis[i].display();
+    chibis[i].bubbleCheck();
+    chibis[i].edgeCheck();
 
   }
 }
