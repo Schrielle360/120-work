@@ -29,9 +29,9 @@ function setup() {
 function draw() {
   background('indigo');
 
-  for (let i = 0; i < balls.length; i++) {
+  for (let i = 0; i < chibis.length; i++) {
   //call the Chibi's methods
-    chibi[i].ballCheck(balls, i);
+    chibi[i].chibiCheck(chibis, i);
     chibi[i].display();
     chibi[i].move();
     chibi[i].edgeCheck();
