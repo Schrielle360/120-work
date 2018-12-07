@@ -1,5 +1,6 @@
 let balls = [];
 const numOfBalls = 20;
+//puts the chibi girl in.
 function preload(){
     img = loadImage('catgirl.png');
 }

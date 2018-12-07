@@ -1,7 +1,5 @@
 class Ball {
     constructor(x, y, size) {
-        this.color = 'red';
-        this.size = random(20, 80);
         this.rad = this.size / 2;
         this.posX = x;
         this.posY = y;
@@ -30,12 +28,10 @@ class Ball {
         // check if the ball has hit a vertical wall (left or right walls)
         if (this.posX + this.rad >= width || this.posX - this.rad <= 0) {
             this.deltaX *= -1;
-            this.color = 'rgb(110, 240, 158)';
         }
         // check if the ball has hit a horizontal wall (top or bottom walls)
         if (this.posY + this.rad >= height || this.posY - this.rad <= 0) {
             this.deltaY *= -1;
-            this.color = 'rgb(110, 240, 158)';
         }
     }
 
