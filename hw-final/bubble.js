@@ -1,7 +1,7 @@
 class Chibi {
   constructor(x, y, size) {
     this.color = color;
-    this.size = random(40, 80);
+    this.size = 30;
     this.rad = this.size/ 2;
     this.x = x;
     this.y = y;
@@ -53,8 +53,8 @@ class Chibi {
           let combinedR = this.rad + otherChibis[n].rad;
 
           if( d <= combinedR) {
-            this.deltaX *= -2;
-            this.deltaY *= -2;
+            this.deltaX *= -1;
+            this.deltaY *= -1;
         }
       }
     }
