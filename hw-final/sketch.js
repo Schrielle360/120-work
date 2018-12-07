@@ -10,7 +10,7 @@ function setup() {
     // create a new chibi object of class type "chibi"
     let init_x = 30;
     let init_y = 30;
-    for (let i = 0; i < numOfBalls; i++) {
+    for (let i = 0; i < numOfChibis; i++) {
         chibis.push(new Chibi(init_x, init_y));
         // move the starting position over
         // This is to ensure that the chibis do not start
