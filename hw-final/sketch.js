@@ -28,14 +28,6 @@ function setup() {
   }
 }
 
-// deletes a chibi if clicked.
-function mousePressed() {
-    for (let i = chibi.length - 1; i >= 0; i--) {
-      if (chibi[i].rollover(mouseX, mouseY)) {
-        chibi.splice(i, 1);
-    }
-  }
-}
 
 function draw() {
   background('indigo');
@@ -46,6 +38,23 @@ function draw() {
     chibi[i].display();
     chibi[i].move();
     chibi[i].edgeCheck();
-    chibi[i].rollover();
+    chibi[i].mouseCheck();
   }
+}
+
+// deletes a chibi if clicked.
+function mousePressed() {
+    for (let i = chibi.length - 1; i >= 0; i--) {
+      let destroyMe = chibi[i].mouseCheck();
+      if (destroyMe) {
+        bubbles.splice(i, 1);
+      }
+   }
+}
+
+function chibiTimer() {
+  let c = new Chibi(random(width), random(height), random(200));
+  chibi.push(b);
+  //this has the effect of calling itsself every x-milliseconds
+  setTimeout(chibiTimer, random(20000));
 }

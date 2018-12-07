@@ -18,12 +18,15 @@ class Chibi {
     pop();
   }
 
-  rollover (cX, cY) {
-    let d = dist( cX, cY, this.x, this.y);
+  mouseCheck() {
+    // get the distance between the mouse and the center of the chibis
+    let d = dist(this.x, this.y, mouseX, mouseY);
+    //check if the distance is less than chibi radius
+    //if yes then mouse is inside chibi
     if (d < this.r) {
-      console.log('edge');
+      return true;
     } else {
-    this.brightness = 150;
+      return false;
     }
   }
 
