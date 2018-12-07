@@ -15,15 +15,6 @@ class Ball {
 
     }
 
-//    display() {
-//        push();
-//        imageMode(CENTER);
-//        image(img, this.x, this.y);
-        //stroke(255);
-        //fill(255,100);
-        //ellipse(this.x,this.y, 48, 48);
-      //  pop();
-    }
 
     move() {
         this.posX += this.deltaX;
