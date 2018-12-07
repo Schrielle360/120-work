@@ -12,18 +12,17 @@ function setup() {
 
 //creates a new chibi of the object of class 'chibi'
   for (let i = 0; i < 5; i++) {
-  let init_x = random(windowWidth, windowHeight);
-  let init_y = random(windowWidth, windowHeight);
+  let init_x = 60;
+  let init_y = 60;
   for (let i = 0; i < numOfChibis; i++){
   let c = new Chibi(init_x, init_y);
    chibi.push(c);
     //move the starting position over
     // chibis wont start on eachother
-    init_x += random(0, windowWidth);
-    init_y += random(0, windowHeight);
+    init_x += 100;
     if(init_x > width) {
-      init_x += 60
-      init_y += 60
+      init_x = random(0, windowWidth);
+      init_y += random(0, windowHeight);
       }
     }
   }
