@@ -12,15 +12,13 @@ class Ball {
           //fill(255,100);
           //ellipse(this.x,this.y, 48, 48);
         }
-
     }
-
-
+    //changes the position
     move() {
         this.posX += this.deltaX;
         this.posY += this.deltaY;
     }
-
+    // makes sure it doesn't leave the canvas
     edgeCheck() {
         // check if the ball has hit a vertical wall (left or right walls)
         if (this.posX + this.rad >= width || this.posX - this.rad <= 0) {
@@ -32,7 +30,7 @@ class Ball {
         }
     }
 
-
+    // makes sure the chibi doesn't bounce into others 
     ballCheck(otherBalls, myId) {
         // for loop touches each of the balls in the array
         for (let n = 0; n < otherBalls.length; n++) {

@@ -12,20 +12,22 @@ function Bubble(x, y) {
     //fill(255,100);
     //ellipse(this.x,this.y, 48, 48);
   }
-
+  //changes where the chibi is.
   this.update = function() {
     this.x += this.deltaX;
     this.y += this.deltaY;
   }
   edgeCheck() {
       // check if the ball has hit a vertical wall (left or right walls)
-      if (this.x + this.rad >= width || this.x - this.rad <= 0) {
+    if (this.x + this.rad >= width || this.x - this.rad <= 0) {
           this.deltaX *= -1;
-      }
+    }
       // check if the ball has hit a horizontal wall (top or bottom walls)
-      if (this.y + this.rad >= height || this.y - this.rad <= 0) {
+    if (this.y + this.rad >= height || this.y - this.rad <= 0) {
           this.deltaY *= -1;
-      }
+    }
+  }
+
       bubbleCheck(otherbubbles, myId) {
           // for loop touches each of the balls in the array
           for (let i = 0; i < otherbubbles.length; i++) {
