@@ -21,7 +21,7 @@ class Chibi {
   rollover (cX, cY) {
     let d = dist( cX, cY, this.x, this.y);
     if (d < this.r) {
-      this.brightness = 255;
+      console.log('edge');
     } else {
     this.brightness = 150;
     }
