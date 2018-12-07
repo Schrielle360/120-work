@@ -23,7 +23,7 @@ class Chibi {
     if (d < this.r) {
       this.brightness = 255;
     } else {
-    this.brightness = 0;
+    this.brightness = 150;
     }
   }
 
