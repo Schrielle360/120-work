@@ -1,4 +1,4 @@
-var chibis = [];
+var Chibi = [];
 var img;
 
 function preload(){
