@@ -30,11 +30,11 @@ function setup() {
 
 // deletes a chibi if clicked.
 function mousePressed() {
-    for (let i = chibi.length-1; i >= 0; i--) {
+    for (let i = chibi.length - 1; i >= 0; i--) {
       if (chibi[i].rollover(mouseX, mouseY)) {
         chibi.splice(i, 1);
-      }
     }
+  }
 }
 
 function draw() {
