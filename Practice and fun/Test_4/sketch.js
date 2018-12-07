@@ -11,7 +11,7 @@ function setup() {
 
 function mousePressed() {
   var b = new Chibi(mouseX, mouseY);
-  bubbles.push(b);
+  chibis.push(b);
 }
 
 function draw() {
