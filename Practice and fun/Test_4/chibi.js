@@ -5,10 +5,10 @@ class Ball {
         this.rad = this.size / 2;
         this.posX = x;
         this.posY = y;
-        this.deltaX = random(-5, 5);
-        this.deltaY = random(-5, 5);
+        this.deltaX = random(-2, 2);
+        this.deltaY = random(-2, 2);
 
-  
+
     }
 
     display() {
@@ -53,12 +53,6 @@ class Ball {
                     this.deltaX *= -1;
                     this.deltaY *= -1;
 
-                    // flip the color
-                    if( this.color == 'rgb(237, 36, 232)') {
-                        this.color = 'rgb(16, 224, 231)';
-                    } else {
-                        this.color = 'rgb(237, 36, 232)';
-                    }
                 }
             }
         }
