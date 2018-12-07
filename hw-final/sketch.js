@@ -30,7 +30,9 @@ function setup() {
 
 function mousePressed() {
     for (let i = 0; i < chibi.length; i++) {
-      chibi[i].clicked(mouseX, mouseY);
+      if (chibi[i].clicked(mouseX, mouseY)) {
+        chibi.splice(i, 1);
+      }
     }
 }
 
