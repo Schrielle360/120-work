@@ -1,5 +1,5 @@
-Class Chibi (x, y) {
-  constructor() {
+Class Chibi () {
+  constructor(x, y) {
     this.x = x;
     this.y = y;
   }
