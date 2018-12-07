@@ -1,4 +1,4 @@
-var Chibi = [];
+let chibi;
 var img;
 
 function preload(){
@@ -7,17 +7,16 @@ function preload(){
 
 function setup() {
   createCanvas( 800, 600);
+
+  chibi = new Chibi (width/2, height/2, 50 );
 }
 
-function mousePressed() {
-  var b = new Chibi(mouseX, mouseY);
-  chibis.push(b);
-}
 
 function draw() {
   background('indigo');
-  for (var i = chibis.length - 1; i >= 0 ; i--) {
-    chibis[i].update();
-    chibis[i].display();
-  }
+
+  //call the ball's methods
+    chibi.move();
+    chibi.display();
+    chibi.edgeCheck();
 }
