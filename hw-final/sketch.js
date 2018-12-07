@@ -11,7 +11,7 @@ function setup() {
   createCanvas( windowWidth, 600);
 
 //creates a new chibi of the object of class 'chibi'
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 1; i++) {
   let init_x = 60;
   let init_y = 60;
   for (let i = 0; i < numOfChibis; i++){
