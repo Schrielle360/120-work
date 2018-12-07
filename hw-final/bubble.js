@@ -7,7 +7,7 @@ Class Chibi (x, y) {
     this.deltaX = random(-10, 10);
     this.deltaY = random(-10, 10);
   }
-  //shows the chibi 
+  //shows the chibi
   display () {
     imageMode(CENTER);
     image(img, this.x, this.y);
@@ -20,7 +20,7 @@ Class Chibi (x, y) {
     this.x += this.deltaX;
     this.y += this.deltaY;
   }
-  edgeCheck() {
+  edgeCheck(){
       // check if the ball has hit a vertical wall (left or right walls)
     if (this.x + this.rad >= width || this.x - this.rad <= 0) {
           this.deltaX *= -1;
