@@ -34,7 +34,7 @@ class Chibi {
     }
   }
 
-  ballCheck( otherChibis, myId) {
+  chibiCheck( otherChibis, myId) {
     //for loop touches each of the Chibis in the array
     for (let n = 0; n < otherChibis.length; n++) {
       //if n != myId, then check for touching
