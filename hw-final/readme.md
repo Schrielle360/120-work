@@ -52,4 +52,6 @@
 - mess up entire code, not sure how to fix. asked for help 12/3/2018
 - cry a little inside 12/3/2018
 - try to figure out how to fix this. Made some changes to the code
-  12/3/2018 
+  12/3/2018
+- Asked professor for help and fixed Class styles. 12/6/2018
+- Changed my Chibi from a var to a Class 12/6/2018 

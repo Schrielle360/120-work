@@ -1,5 +1,9 @@
 var chibis = [];
+var img;
 
+function preload(){
+  img = loadImage('catgirl.png');
+}
 function setup() {
   createCanvas( 800, 600);
 }
