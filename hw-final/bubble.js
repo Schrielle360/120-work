@@ -1,19 +1,22 @@
-function Chibi(x, y) {
-  this.x = x;
-  this.y = y;
-  this.size = random(20, 80);
-  this.rad = this.size / 2;
-  this.deltaX = random(-10, 10);
-  this.deltaY = random(-10, 10);
-  this.display = function() {
+Class Chibi (x, y) {
+  constructor() {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.rad = this.size / 2;
+    this.deltaX = random(-10, 10);
+    this.deltaY = random(-10, 10);
+  }
+  //shows the chibi 
+  display () {
     imageMode(CENTER);
     image(img, this.x, this.y);
     //stroke(255);
     //fill(255,100);
     //ellipse(this.x,this.y, 48, 48);
   }
-  //changes where the chibi is.
-  this.update = function() {
+  //moves the chibi
+  move () {
     this.x += this.deltaX;
     this.y += this.deltaY;
   }

@@ -29,7 +29,7 @@ function draw() {
 
   background('indigo');
   for (var i = chibis.length - 1; i >= 0; i--) {
-    chibis[i].update();
+    chibis[i].move();
     chibis[i].display();
     chibis[i].bubbleCheck();
     chibis[i].edgeCheck();
