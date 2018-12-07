@@ -1,6 +1,6 @@
 var bubbles = [];
 var img;
-const numOfBubbles = 30;
+const numOfChibis = 20;
 function preload(){
     img = loadImage('catgirl.png');
 }

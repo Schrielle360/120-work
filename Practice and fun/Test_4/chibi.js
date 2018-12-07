@@ -1,5 +1,6 @@
 class Ball {
     constructor(x, y, size) {
+        this.size = random(20, 80);
         this.rad = this.size / 2;
         this.posX = x;
         this.posY = y;
@@ -30,7 +31,7 @@ class Ball {
         }
     }
 
-    // makes sure the chibi doesn't bounce into others 
+    // makes sure the chibi doesn't bounce into others
     ballCheck(otherBalls, myId) {
         // for loop touches each of the balls in the array
         for (let n = 0; n < otherBalls.length; n++) {
