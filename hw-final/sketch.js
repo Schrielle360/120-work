@@ -14,8 +14,8 @@ function setup() {
   let init_x = 60;
   let init_y = 60;
   for (let i = 0; i < numOfChibis; i++){
-   let c = new Chibi(init_x, init_y);
-   chibis.push(c);
+  let c = new Chibi(init_x, init_y);
+   chibi.push(c);
     //move the starting position over
     // chibis wont start on eachother
     init_x += 100;
