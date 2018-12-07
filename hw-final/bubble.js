@@ -18,10 +18,12 @@ class Chibi {
     pop();
   }
 
-  clicked (clickedX, clickedY) {
-    let d = dist( clickedX, clickedY, this.x, this.y);
+  rollover (cX, cY) {
+    let d = dist( cX, cY, this.x, this.y);
     if (d < this.r) {
-      console.log("clicked on Chibi");
+      this.brightness = 255;
+    } else {
+    this.brightness = 0;
     }
   }
 
