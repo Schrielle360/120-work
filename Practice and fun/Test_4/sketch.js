@@ -1,4 +1,4 @@
-let chibi;
+let chibi = [];
 var img;
 const numOfChibis = 20;
 
@@ -31,9 +31,9 @@ function draw() {
 
   for (let i = 0; i < balls.length; i++) {
   //call the Chibi's methods
-    chibi.ballCheck(balls, i);
-    chibi.display();
-    chibi.move();
-    chibi.edgeCheck();
+    chibi[i].ballCheck(balls, i);
+    chibi[i].display();
+    chibi[i].move();
+    chibi[i].edgeCheck();
   }
 }
