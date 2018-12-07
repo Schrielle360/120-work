@@ -35,12 +35,10 @@ class Chibi {
   edgeCheck() {
     // check if the Chibi has hit a vertical wall (left or right walls)
     if (this.x + this.rad >= width || this.x - this.rad <= 0) {
-        console.log("edge");
         this.deltaX *= -1;
     }
     // check if the Chibi has hit a horizontal wall (top or bottom walls)
     if (this.y + this.rad >= height || this.y - this.rad <= 0) {
-        console.log("edge");
         this.deltaY *= -1;
       }
   }
