@@ -11,6 +11,7 @@ function setup() {
   createCanvas( windowWidth, 600);
 
 //creates a new chibi of the object of class 'chibi'
+  for (let i = 0; i < 5; i++) {
   let init_x = 60;
   let init_y = 60;
   for (let i = 0; i < numOfChibis; i++){
@@ -22,10 +23,16 @@ function setup() {
     if(init_x > width) {
       init_x = 60;
       init_y += 100;
+      }
     }
   }
 }
 
+function mousePressed() {
+    for (let i = 0; i < chibi.length; i++) {
+      chibi[i].clicked(mouseX, mouseY);
+    }
+}
 
 function draw() {
   background('indigo');

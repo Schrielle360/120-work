@@ -18,6 +18,13 @@ class Chibi {
     pop();
   }
 
+  clicked (clickedX, clickedY) {
+    let d = dist( clickedX, clickedY, this.x, this.y);
+    if (d < this.r) {
+      console.log("clicked on Chibi");
+    }
+  }
+
   move() {
     this.x = this.x += this.deltaX;
     this.y = this.y += this.deltaY;
