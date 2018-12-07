@@ -54,4 +54,7 @@
 - try to figure out how to fix this. Made some changes to the code
   12/3/2018
 - Asked professor for help and fixed Class styles. 12/6/2018
-- Changed my Chibi from a var to a Class 12/6/2018 
+- Changed my Chibi from a var to a Class 12/6/2018
+- rewrote the code in practice file under Test_4 12/6/2018
+- Fixed the Class error doing that ^ but new error. 12/6/2018
+- Still trying to get the chibis to appear on screen 12/6/2018
