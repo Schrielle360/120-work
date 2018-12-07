@@ -5,18 +5,24 @@ class Ball {
         this.posY = y;
         this.deltaX = random(-2, 2);
         this.deltaY = random(-2, 2);
-
+        this.display = function() {
+          imageMode(CENTER);
+          image(img, this.x, this.y);
+          //stroke(255);
+          //fill(255,100);
+          //ellipse(this.x,this.y, 48, 48);
+        }
 
     }
 
-    display() {
-        push();
-        imageMode(CENTER);
-        image(img, this.x, this.y);
+//    display() {
+//        push();
+//        imageMode(CENTER);
+//        image(img, this.x, this.y);
         //stroke(255);
         //fill(255,100);
         //ellipse(this.x,this.y, 48, 48);
-        pop();
+      //  pop();
     }
 
     move() {
