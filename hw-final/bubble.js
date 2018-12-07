@@ -1,5 +1,5 @@
-Class Chibi (x, y) {
-  constructor() {
+Class Chibi () {
+  constructor(x, y) {
     this.x = x;
     this.y = y;
     this.size = size;
@@ -11,15 +11,13 @@ Class Chibi (x, y) {
   display () {
     imageMode(CENTER);
     image(img, this.x, this.y);
-    //stroke(255);
-    //fill(255,100);
-    //ellipse(this.x,this.y, 48, 48);
-  }
+    }
   //moves the chibi
   move () {
     this.x += this.deltaX;
     this.y += this.deltaY;
   }
+  //keeps the chibis on canvas
   edgeCheck(){
       // check if the ball has hit a vertical wall (left or right walls)
     if (this.x + this.rad >= width || this.x - this.rad <= 0) {
@@ -30,8 +28,8 @@ Class Chibi (x, y) {
           this.deltaY *= -1;
     }
   }
-      bubbleCheck(otherChibis, myId) {
-          // for loop touches each of the balls in the array
+        ChibiCheck(otherChibis, myId) {
+      // for loop touches each of the balls in the array
           for (let i = 0; i < otherChibis.length; i++) {
               // if i != myId, then check for touching
               // otherwise, its ME and we need to skip
