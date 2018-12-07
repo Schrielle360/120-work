@@ -6,17 +6,19 @@ function preload(){
 }
 
 function setup() {
-  createCanvas( 800, 600);
+  //create the canvas (windowWidth, windowHeight);
+  createCanvas( windowWidth, 600);
 
-  chibi = new Chibi (width/2, height/2, 50 );
+//creates a new chibi of the object of class 'chibi'
+  chibi = new Chibi (width/2, height/2, 80 );
 }
 
 
 function draw() {
   background('indigo');
 
-  //call the ball's methods
-    chibi.move();
+  //call the Chibi's methods
     chibi.display();
+    chibi.move();
     chibi.edgeCheck();
 }
