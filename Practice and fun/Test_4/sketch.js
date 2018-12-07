@@ -1,4 +1,4 @@
-let chibi;
+var chibi;
 var img;
 
 function preload(){
