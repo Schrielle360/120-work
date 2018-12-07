@@ -33,4 +33,21 @@ class Chibi {
         this.deltaY *= -1;
     }
   }
+
+  ballCheck( otherChibis, myId) {
+    //for loop touches each of the Chibis in the array
+    for (let n = 0; n < otherChibis.length; n++) {
+      //if n != myId, then check for touching
+      //otherwise, its ME and we need to skip
+      if( n != myId) {
+          let d = dist( this.x, this.y, otherChibis[n].x, otherChibis[n].y );
+          let combinedR = this.rad + otherChibis[n].rad;
+
+          if( d <= combinedR) {
+            this.deltaX *= -1;
+            this.deltaY *= -1;
+        }
+      }
+    }
+  }
 }
