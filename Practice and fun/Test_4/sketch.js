@@ -31,6 +31,7 @@ function draw() {
 
   for (let i = 0; i < balls.length; i++) {
   //call the Chibi's methods
+    chibi.ballCheck(balls, i);
     chibi.display();
     chibi.move();
     chibi.edgeCheck();
