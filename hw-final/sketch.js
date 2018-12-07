@@ -19,7 +19,8 @@ function setup() {
    chibi.push(c);
     //move the starting position over
     // chibis wont start on eachother
-    init_x += 50;
+    init_x += random(0, windowWidth);
+    init_y += random(0, windowHeight);
     if(init_x > width) {
       init_x += 60
       init_y += 60
