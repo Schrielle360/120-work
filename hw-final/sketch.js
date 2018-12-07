@@ -22,7 +22,7 @@ function setup() {
     init_x += 100;
     if(init_x > width) {
       init_x = random(0, windowWidth);
-      init_y += random(0, 400);
+      init_y += random(0, windowHeight);
       }
     }
   }
