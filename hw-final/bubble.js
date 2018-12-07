@@ -26,7 +26,7 @@ function Chibi(x, y) {
     if (this.y + this.rad >= height || this.y - this.rad <= 0) {
           this.deltaY *= -1;
     }
-
+  }
       bubbleCheck(otherChibis, myId) {
           // for loop touches each of the balls in the array
           for (let i = 0; i < otherChibis.length; i++) {
