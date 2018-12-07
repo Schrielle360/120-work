@@ -47,6 +47,5 @@ function draw() {
     chibi[i].move();
     chibi[i].edgeCheck();
     chibi[i].rollover();
-    }
   }
 }
