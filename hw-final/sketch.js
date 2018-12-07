@@ -47,12 +47,6 @@ function draw() {
     chibi[i].move();
     chibi[i].edgeCheck();
     chibi[i].rollover();
-    // remove the chibi if they intersect 
-    for (var j = 0; j < chibi.length; j++) {
-      if (i != j && chibi[i].intersects(chibi[j])) {
-        chibi[i].splice();
-        chibi[j].splice();
-      }
     }
   }
 }
