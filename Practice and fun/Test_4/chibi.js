@@ -11,6 +11,8 @@ class Chibi {
 
   display() {
     push();
+    //center image
+    imageMode(CENTER);
     //the main image
     image(img, this.x, this.y);
     pop();
