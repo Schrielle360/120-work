@@ -39,7 +39,7 @@ function draw() {
 
   for (let i = 0; i < chibi.length; i++) {
   //call the Chibi's methods
-    chibi[i].chibiCheck(chibis, i);
+    chibi[i].chibiCheck(chibi, i);
     chibi[i].display();
     chibi[i].move();
     chibi[i].edgeCheck();
