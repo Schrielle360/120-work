@@ -7,10 +7,7 @@
 1. #### Actual proposal
 
   I propose to make a simple game of 'remove the Chibi' where the Chibi,
-  when clicked, ends up disappearing. However, if it touches another Chibi
-  it costs you points. This would mean that your Chibi's when popped would
-   gain you points. The objective is to keep the score about -10. If the score
-    hits -10 then you lose and have to restart.
+  when clicked, ends up disappearing. 
 
 
 
