@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   background('indigo');
 
-  for (let i = 0; i < chibis.length; i++) {
+  for (let i = 0; i < chibi.length; i++) {
   //call the Chibi's methods
     chibi[i].chibiCheck(chibis, i);
     chibi[i].display();
