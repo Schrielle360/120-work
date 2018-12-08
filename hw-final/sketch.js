@@ -39,7 +39,7 @@ function draw() {
     chibi[i].edgeCheck();
     chibi[i].mouseCheck();
   }
-  textSize(300);
+  textSize(100);
   textAlign(CENTER);
   strokeWeight(3);
   stroke('chartreuse');
