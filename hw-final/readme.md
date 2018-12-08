@@ -59,3 +59,4 @@
 - fixing minor errors and coding mistakes. 12/7/2018
 - fixing spacial issues for chibis so they do not over lap as much 12/7/2018
 - changed how many chibis appear at the start 12/7/2018
+- added text 'pop the chibi' 
