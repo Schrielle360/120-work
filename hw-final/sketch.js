@@ -36,7 +36,7 @@ function loaded() {
 }
 
 function draw() {
-  background('indigo');
+  background(random(255));
 
   song.setVolume(slider.value());
 
