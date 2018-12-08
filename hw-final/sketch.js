@@ -41,6 +41,8 @@ function draw() {
   }
   textSize(300);
   textAlign(CENTER);
+  strokeWeight(3);
+  stroke('chartreuse');
   fill('magenta');
   text("POP THE CHIBI", width/2, height/2)
 }
