@@ -37,6 +37,8 @@ function setup() {
 
 function draw() {
   background('indigo');
+
+  //sets the songs volume to the sliders value
   song.setVolume(slider.value());
 
   for (let i = 0; i < chibi.length; i++) {
@@ -58,9 +60,6 @@ function draw() {
   strokeWeight(4);
   stroke('black');
   text("Score:" + num, 100, 575);
-  //brake the mouse press function and glitch it to make it scroll
-  // this will make the chibi disappear if you simply swipe over them
-  text("score:" + mouseCheck, 0, 700);
 }
 
 // deletes a chibi if clicked.
