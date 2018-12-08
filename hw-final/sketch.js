@@ -46,8 +46,8 @@ function draw() {
   fill('magenta');
   text("POP THE CHIBI", width/2, height/2)
 
-  textSize(30);
-  textAlign(0, 400);
+  textSize(10);
+  textAlign(40, 400);
   strokeWeight(4);
   stroke('black');
   text("Score:" + mousePressed, 10, 30);
