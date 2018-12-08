@@ -56,10 +56,7 @@ function draw() {
   fill('magenta');
   text("POP THE CHIBI", width/2, height/2)
 
-  textSize(25);
-  strokeWeight(4);
-  stroke('black');
-  text("Score:" + "number here", 50, 575);
+
 }
 
 // deletes a chibi if clicked.
