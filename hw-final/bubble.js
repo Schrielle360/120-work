@@ -23,7 +23,7 @@ class Chibi {
     let d = dist(this.x, this.y, mouseX, mouseY);
     //check if the distance is less than chibi radius
     //if yes then mouse is inside chibi
-    if (d < this.r) {
+    if (d < this.rad) {
       return true;
     } else {
       return false;
