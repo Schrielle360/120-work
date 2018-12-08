@@ -52,7 +52,7 @@ function mousePressed() {
 }
 
 function chibiTimer() {
-  let c = new Chibi(random(width), random(height), random(200));
+  let b = new Chibi(random(width), random(height), random(200));
   chibi.push(b);
   //this has the effect of calling itsself every x-milliseconds
   setTimeout(chibiTimer, random(20000));
