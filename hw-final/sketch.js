@@ -2,7 +2,7 @@ let chibi = [];
 var img;
 const numOfChibis = 10;
 var song;
-let num = 1
+let num = 0
 var slider;
 
 function preload(){
