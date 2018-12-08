@@ -39,6 +39,10 @@ function draw() {
     chibi[i].edgeCheck();
     chibi[i].mouseCheck();
   }
+  textSize(300);
+  textAlign(CENTER);
+  fill('magenta');
+  text("POP THE CHIBI", width/2, height/2)
 }
 
 // deletes a chibi if clicked.
