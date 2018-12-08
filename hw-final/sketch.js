@@ -5,7 +5,7 @@ var song;
 
 function preload(){
   img = loadImage('catgirl.png');
-  song = loadSound("Sug.mp3");
+  song = loadSound("SuG.mp3");
 }
 
 function setup() {
