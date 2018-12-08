@@ -47,7 +47,7 @@ function draw() {
   text("POP THE CHIBI", width/2, height/2)
 
   let mp = mousePressed();
-  textSize(300);
+  textSize(50);
   strokeWeight(4);
   stroke('black');
   text("Score:" + mp, 150, 500);
