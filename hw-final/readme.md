@@ -64,3 +64,6 @@
 - fixed a spelling error to make the chibi's disappear 12/7/2018
 - Worked on the score board design more 12/7/2018
 - decided to add music to the game 12/7/2018
+- FINISHED THE SCORE BOARD AND MADE THE MUSIC WORK 12/8/2018
+- Added a slider so people could turn the volume down if they wished. 12/8/2018
+- Finished 12/8/2018 1:37 AM 

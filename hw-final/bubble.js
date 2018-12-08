@@ -1,7 +1,7 @@
 class Chibi {
   constructor(x, y, size) {
     this.color = color;
-    this.size = 30;
+    this.size = 60;
     this.rad = this.size/ 2;
     this.x = x;
     this.y = y;
