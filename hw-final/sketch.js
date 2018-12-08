@@ -1,15 +1,19 @@
 let chibi = [];
 var img;
 const numOfChibis = 10;
-//var song;
+var song;
 
 function preload(){
   img = loadImage('catgirl.png');
+  song = loadSound("Sug.mp3");
 }
 
 function setup() {
   //create the canvas (windowWidth, windowHeight);
   createCanvas( windowWidth, 600);
+
+  // create the song
+  song.play();
 //creates a new chibi of the object of class 'chibi'
   let init_x = 60;
   let init_y = 60;
@@ -29,7 +33,7 @@ function setup() {
 
 
 function draw() {
-  background(random(255));
+  background('indigo');
 
   for (let i = 0; i < chibi.length; i++) {
   //call the Chibi's methods
@@ -49,7 +53,7 @@ function draw() {
   textSize(25);
   strokeWeight(4);
   stroke('black');
-  text("Score:" + chibi.num, 50, 575);
+  text("Score:" + this.num, 50, 575);
 }
 
 // deletes a chibi if clicked.
