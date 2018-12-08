@@ -12,7 +12,7 @@ function setup() {
   createCanvas( windowWidth, 600);
   //create a slider
   slider = createSlider(0, 1, 0.5, 0.01);
-  // load the song 
+  // load the song
   song = loadSound("SuG.mp3", loaded);
 //creates a new chibi of the object of class 'chibi'
   let init_x = 60;
@@ -58,7 +58,7 @@ function draw() {
   textSize(25);
   strokeWeight(4);
   stroke('black');
-  text("Score:" + "number here", 150, 500);
+  text("Score:" + "number here", 50, 575);
 }
 
 // deletes a chibi if clicked.
