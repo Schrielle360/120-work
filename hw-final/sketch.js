@@ -46,11 +46,12 @@ function draw() {
   fill('magenta');
   text("POP THE CHIBI", width/2, height/2)
 
+  let mp = mousePressed();
   textSize(10);
   textAlign(100, 600);
   strokeWeight(4);
   stroke('black');
-  text("Score:" + destroyMe, 40, 600);
+  text("Score:" + mp, 40, 600);
 }
 
 // deletes a chibi if clicked.
