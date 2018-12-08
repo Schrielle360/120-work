@@ -2,6 +2,7 @@ let chibi = [];
 var img;
 const numOfChibis = 10;
 var song;
+var slider;
 
 function preload(){
   img = loadImage('catgirl.png');
