@@ -55,6 +55,7 @@
 - Fixed the Class error doing that ^ but new error. 12/6/2018
 - Still trying to get the chibis to appear on screen 12/6/2018
 - added in a chibiTimer 12/7/2018
+- Checked forum and got some help from someone about some bugs 12/7/2018
 - Working on getting the mousePressed function to work 12/7/2018
 - fixing minor errors and coding mistakes. 12/7/2018
 - fixing spacial issues for chibis so they do not over lap as much 12/7/2018
