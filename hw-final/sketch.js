@@ -1,6 +1,7 @@
 let chibi = [];
 var img;
 const numOfChibis = 10;
+var song;
 
 function preload(){
   img = loadImage('catgirl.png');
@@ -9,7 +10,10 @@ function preload(){
 function setup() {
   //create the canvas (windowWidth, windowHeight);
   createCanvas( windowWidth, 600);
-
+  //create a slider
+  slider = createSlider(0, 1, 0.5, 0.01);
+  // load the song 
+  song = loadSound("SuG.mp3", loaded);
 //creates a new chibi of the object of class 'chibi'
   let init_x = 60;
   let init_y = 60;
@@ -27,9 +31,14 @@ function setup() {
   }
 }
 
+function loaded() {
+  song.play();
+}
 
 function draw() {
   background('indigo');
+
+  song.setVolume(slider.value());
 
   for (let i = 0; i < chibi.length; i++) {
   //call the Chibi's methods
