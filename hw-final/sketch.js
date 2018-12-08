@@ -45,6 +45,12 @@ function draw() {
   stroke('chartreuse');
   fill('magenta');
   text("POP THE CHIBI", width/2, height/2)
+
+  textSize(30);
+  textAlign(0, 400);
+  strokeWeight(4);
+  stroke('black');
+  text("Score:" + mousePressed, 10, 30);
 }
 
 // deletes a chibi if clicked.
