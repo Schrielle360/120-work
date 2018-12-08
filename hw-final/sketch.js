@@ -11,7 +11,6 @@ function setup() {
   createCanvas( windowWidth, 600);
 
 //creates a new chibi of the object of class 'chibi'
-  for (let i = 0; i < 1; i++) {
   let init_x = 60;
   let init_y = 60;
   for (let i = 0; i < numOfChibis; i++){
@@ -22,9 +21,8 @@ function setup() {
     // chibis wont start on eachother
     init_x += 100;
     if(init_x > width) {
-      init_x += random(60, 600);
-      init_y += random(60, 600);
-      }
+      init_x = 60;
+      init_y += 100;
     }
   }
 }
