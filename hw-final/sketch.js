@@ -3,6 +3,7 @@ var img;
 const numOfChibis = 10;
 var song;
 let num = 1
+var slider;
 
 function preload(){
   img = loadImage('catgirl.png');
@@ -12,7 +13,8 @@ function preload(){
 function setup() {
   //create the canvas (windowWidth, windowHeight);
   createCanvas( windowWidth, 600);
-
+  //create slider
+  slider = createSlider(0, 1, 0.5, 0.01);
   // create the song
   song.play();
 //creates a new chibi of the object of class 'chibi'
@@ -35,6 +37,7 @@ function setup() {
 
 function draw() {
   background('indigo');
+  song.setVolume(slider.value());
 
   for (let i = 0; i < chibi.length; i++) {
   //call the Chibi's methods
@@ -55,6 +58,9 @@ function draw() {
   strokeWeight(4);
   stroke('black');
   text("Score:" + num, 100, 575);
+  //brake the mouse press function and glitch it to make it scroll
+  // this will make the chibi disappear if you simply swipe over them
+  text("score:" + mouseCheck, 0, 700);
 }
 
 // deletes a chibi if clicked.
