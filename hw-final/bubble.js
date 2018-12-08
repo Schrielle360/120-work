@@ -26,10 +26,7 @@ class Chibi {
     //if yes then mouse is inside chibi
     if (d < this.rad) {
       return true;
-      textSize(25);
-      strokeWeight(4);
-      stroke('black');
-      text("Score:" + this.num + 1 , 50, 575);
+      this.num = this.num + 1 
     } else {
       return false;
     }
