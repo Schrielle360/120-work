@@ -7,7 +7,7 @@
 1. #### Actual proposal
 
   I propose to make a simple game of 'remove the Chibi' where the Chibi,
-  when clicked, ends up disappearing. 
+  when clicked, ends up disappearing.
 
 
 
@@ -55,3 +55,7 @@
 - rewrote the code in practice file under Test_4 12/6/2018
 - Fixed the Class error doing that ^ but new error. 12/6/2018
 - Still trying to get the chibis to appear on screen 12/6/2018
+- added in a chibiTimer 12/7/2018
+- Working on getting the mousePressed function to work 12/7/2018
+- fixing minor errors and coding mistakes. 12/7/2018
+- fixing spacial issues for chibis so they do not over lap as much 12/7/2018
