@@ -7,7 +7,6 @@ class Chibi {
     this.y = y;
     this.deltaX = random(-2, 2);
     this.deltaY = random(-2, 2);
-    this.num = 1
   }
 
   display() {
@@ -26,7 +25,6 @@ class Chibi {
     //if yes then mouse is inside chibi
     if (d < this.rad) {
       return true;
-      this.num = this.num + 1 
     } else {
       return false;
     }

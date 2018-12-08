@@ -2,6 +2,7 @@ let chibi = [];
 var img;
 const numOfChibis = 10;
 var song;
+let num = 1
 
 function preload(){
   img = loadImage('catgirl.png');
@@ -53,7 +54,7 @@ function draw() {
   textSize(25);
   strokeWeight(4);
   stroke('black');
-  text("Score:" + this.num, 100, 575);
+  text("Score:" + num, 100, 575);
 }
 
 // deletes a chibi if clicked.
@@ -61,6 +62,9 @@ function mousePressed() {
     for (let i = chibi.length - 1; i >= 0; i--) {
       let destroyMe = chibi[i].mouseCheck();
       if (destroyMe) {
+
+          num = num + 1
+
         chibi.splice(i, 1);
         break;
       }
