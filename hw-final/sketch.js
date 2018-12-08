@@ -1,6 +1,6 @@
 let chibi = [];
 var img;
-const numOfChibis = 40;
+const numOfChibis = 10;
 
 function preload(){
   img = loadImage('catgirl.png');
