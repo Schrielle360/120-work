@@ -46,7 +46,7 @@ function mousePressed() {
     for (let i = chibi.length - 1; i >= 0; i--) {
       let destroyMe = chibi[i].mouseCheck();
       if (destroyMe) {
-        bubbles.splice(i, 1);
+        chibi.splice(i, 1);
       }
    }
 }
