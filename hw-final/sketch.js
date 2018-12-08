@@ -50,7 +50,7 @@ function draw() {
   textAlign(100, 600);
   strokeWeight(4);
   stroke('black');
-  text("Score:" + mouseCheck, 40, 600);
+  text("Score:" + destroyMe, 40, 600);
 }
 
 // deletes a chibi if clicked.
