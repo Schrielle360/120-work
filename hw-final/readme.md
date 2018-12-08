@@ -33,7 +33,6 @@
 - Make the Chibi disappear when popped.
 - Make more Chibis appear at random
 - create a score board
-- set the score board to end the game if -10
 - finish all this by the end of finals week 8 am on the 14th.
 
 ## Work done so far
