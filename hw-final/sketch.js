@@ -67,9 +67,9 @@ function mousePressed() {
     for (let i = chibi.length - 1; i >= 0; i--) {
       let destroyMe = chibi[i].mouseCheck();
       if (destroyMe) {
-
+        //makes the score go up
           num = num + 1
-
+        // deletes teh corosponding chibi 
         chibi.splice(i, 1);
         break;
       }
