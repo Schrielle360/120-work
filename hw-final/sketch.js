@@ -59,6 +59,7 @@ function mousePressed() {
       let destroyMe = chibi[i].mouseCheck();
       if (destroyMe) {
         chibi.splice(i, 1);
+        break; 
       }
    }
 }
