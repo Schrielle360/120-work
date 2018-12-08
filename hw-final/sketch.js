@@ -53,7 +53,7 @@ function draw() {
   textSize(25);
   strokeWeight(4);
   stroke('black');
-  text("Score:" + this.num, 50, 575);
+  text("Score:" + this.num, 100, 575);
 }
 
 // deletes a chibi if clicked.
