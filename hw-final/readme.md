@@ -60,4 +60,5 @@
 - fixing spacial issues for chibis so they do not over lap as much 12/7/2018
 - changed how many chibis appear at the start 12/7/2018
 - added text 'pop the chibi' 12/7/2018
-- fixed a spelling error to make the chibi's disappear 12/7/2018 
+- fixed a spelling error to make the chibi's disappear 12/7/2018
+- Worked on the score board design more 12/7/2018
